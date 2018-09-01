@@ -6,10 +6,9 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class HomeController {
-@RequestMapping("/")
-public ModelAndView getIndexPage() {
-	ModelAndView mv=new ModelAndView("home");
-	
-	return mv;
-}
+	@RequestMapping("/")
+	public ModelAndView getIndexPage() {
+		ModelAndView mv = new ModelAndView("home");
+		return mv;
+	}
 }
